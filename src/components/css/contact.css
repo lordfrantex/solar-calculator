@@ -1,0 +1,164 @@
+#contact {
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)), url("../../../public/images/background3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 60px auto;
+  margin-bottom: 0;
+  padding: 20px 20px 100px 20px;
+}
+
+.heading-style h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.contact-container {
+  color: white;
+  display: flex;
+  backdrop-filter: blur(25px);
+  align-items: center;
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+  box-shadow: 1px 1px 5px rgba(112, 196, 187, 0.822);
+}
+.contact-container .contact-left {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+.contact-container .contact-left .upper-section {
+  font-family: Poppins;
+  flex: 1;
+}
+.contact-container .contact-left .upper-section h2 {
+  font-weight: 600;
+}
+.contact-container .contact-left .upper-section p.email {
+  font-size: 19px;
+}
+.contact-container .contact-left .lower-section {
+  list-style-type: none;
+  padding-left: 0 !important;
+  flex: 1;
+}
+.contact-container .contact-left .lower-section p.contact {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(7, 4, 104);
+}
+.contact-container .contact-left .lower-section li {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  font-family: Poppins;
+}
+.contact-container .contact-left .lower-section li span {
+  font-size: 30px;
+}
+.contact-container .contact-left .lower-section li a {
+  color: white;
+}
+.contact-container .contact-left .icon-container .icon {
+  display: flex;
+  gap: 18px;
+}
+.contact-container .contact-left .icon-container .icon span {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  transition: 0.3s ease-in-out;
+}
+.contact-container .contact-left .icon-container .icon span:hover {
+  border: 1px solid white;
+}
+.contact-container .contact-right {
+  flex: 1;
+}
+.contact-container .contact-right h4 {
+  text-align: center;
+  margin: 10px 0;
+}
+.contact-container .contact-right .email-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.contact-container .contact-right .email-container input,
+.contact-container .contact-right .email-container textarea {
+  display: block;
+  width: 100%;
+  outline: 0;
+  border: 1px solid rgba(74, 92, 91, 0.5);
+}
+.contact-container .contact-right .email-container input::placeholder,
+.contact-container .contact-right .email-container textarea::placeholder {
+  color: black;
+}
+.contact-container .contact-right .email-container .attachment {
+  padding: 5px;
+  border: none;
+}
+.contact-container .contact-right .email-container input {
+  padding: 8px 20px;
+  margin: 10px 0;
+  border-radius: 20px;
+}
+.contact-container .contact-right .email-container textarea {
+  height: 150px;
+  padding: 20px;
+}
+.contact-container .contact-right .email-container button {
+  padding: 5px;
+  margin: 10px 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(61, 56, 201);
+  outline: 0;
+  border: 0;
+  gap: 6px;
+  color: white;
+  cursor: pointer;
+}
+.contact-container .contact-right .email-container button span {
+  font-size: 23px;
+}
+
+.whatsapp-chat {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+.whatsapp-chat .container-xxl a {
+  width: max-content;
+  background-color: transparent;
+  margin-left: auto;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  text-decoration: none;
+}
+.whatsapp-chat .container-xxl a .whatsapp {
+  font-size: 50px;
+  color: #ad792f;
+}
+
+@media screen and (max-width: 800px) {
+  .contact-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact-left,
+  .contact-right {
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=contact.css.map */

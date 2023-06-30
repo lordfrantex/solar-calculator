@@ -1,0 +1,223 @@
+#contact {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)), url("../../../public/images/background3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 60px auto;
+    margin-bottom: 0;
+    padding: 20px 20px 100px 20px;
+}
+
+.heading-style {
+    h2 {
+        text-align: center;
+        color: white;
+        margin-bottom: 30px;
+    }
+}
+
+.contact-container {
+    color: white;
+
+    display: flex;
+    backdrop-filter: blur(25px);
+
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    box-shadow: 1px 1px 5px rgba(112, 196, 187, 0.822);
+
+    .contact-left {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // padding: 12px;
+        gap: 20px;
+
+        .upper-section {
+            font-family: Poppins;
+            flex: 1;
+
+            h2 {
+                font-weight: 600;
+            }
+
+
+
+            p.email {
+                font-size: 19px;
+            }
+        }
+
+        .lower-section {
+            list-style-type: none;
+            padding-left: 0 !important;
+            flex: 1;
+
+            p.contact {
+                font-size: 30px;
+                font-weight: bold;
+                color: rgb(7, 4, 104);
+            }
+
+            li {
+
+                display: flex;
+                gap: 9px;
+                align-items: center;
+                font-family: Poppins;
+
+                span {
+                    font-size: 30px;
+                    // color: rgb(7, 4, 104);
+
+                }
+
+                a {
+                    color: white;
+
+                }
+            }
+
+
+        }
+
+        .icon-container {
+            .icon {
+                display: flex;
+                gap: 18px;
+
+                span {
+                    font-size: 30px;
+                    cursor: pointer;
+                    padding: 2px 6px;
+                    border-radius: 5px;
+                    border: 1px solid transparent;
+                    transition: .3s ease-in-out;
+
+                    &:hover {
+                        border: 1px solid white;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact-right {
+        h4 {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        flex: 1;
+
+        .email-container {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+
+            input,
+            textarea {
+                display: block;
+                width: 100%;
+                outline: 0;
+                border: 1px solid rgba(74, 92, 91, 0.5);
+
+                &::placeholder {
+                    // font-weight: 600;
+                    color: black;
+                }
+
+
+
+            }
+
+            .attachment {
+                padding: 5px;
+                border: none;
+            }
+
+            input {
+                padding: 8px 20px;
+                margin: 10px 0;
+                border-radius: 20px;
+
+
+            }
+
+            textarea {
+                height: 150px;
+                padding: 20px;
+            }
+
+            button {
+                padding: 5px;
+                margin: 10px 0;
+                display: flex;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                // background-color: rgb(238, 160, 30);
+                background-color: rgb(61, 56, 201);
+                outline: 0;
+                border: 0;
+                gap: 6px;
+                color: white;
+
+                cursor: pointer;
+
+                span {
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+}
+
+.whatsapp-chat {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+
+    .container-xxl {
+        // padding: 15px;
+
+
+
+        a {
+            width: max-content;
+            background-color: transparent;
+            margin-left: auto;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            text-decoration: none;
+
+            .whatsapp {
+                font-size: 50px;
+                color: #ad792f;
+            }
+        }
+    }
+
+
+}
+
+
+
+
+
+@media screen and (max-width:800px) {
+    .contact-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100% !important;
+    }
+}

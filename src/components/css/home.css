@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap");
+.background-cover {
+  background-image: radial-gradient(rgba(11, 15, 36, 0.329), rgba(20, 20, 22, 0.829)), url("../../../public/images/background2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.background-cover .setfix {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  padding: 0;
+}
+.background-cover .setfix .navBg {
+  background-color: rgb(40, 27, 53);
+}
+.background-cover .setfix nav ul li a {
+  color: white;
+}
+.background-cover .setfix nav .nav-link {
+  display: flex;
+  max-width: 100%;
+  transition: all 0.5s ease;
+  padding: 10px 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+.background-cover .setfix nav .nav-link .mobile-nav {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  width: 0;
+  overflow: hidden;
+  height: 100vh;
+  z-index: 100;
+  right: 0;
+  top: 90px;
+  padding: 0;
+  position: fixed;
+  transition: all 0.4s ease-in;
+  background-color: red;
+}
+.background-cover .setfix nav .nav-link .mobile-nav li {
+  margin: 50px 0;
+}
+.background-cover .setfix nav .nav-link .mobile-nav-width {
+  width: 100%;
+}
+.background-cover .setfix nav .nav-link span {
+  z-index: 1000;
+}
+.background-cover .setfix nav .nav-link ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+.background-cover .setfix nav .nav-link ul li {
+  padding: 0 15px;
+}
+.background-cover .setfix nav .nav-link ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.4s ease-in-out;
+  font-weight: bold;
+}
+.background-cover .setfix nav .nav-link ul li a:hover {
+  color: blue;
+}
+.background-cover .setfix nav .nav-link .logo .logo-pics {
+  background-color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.background-cover .setfix nav .nav-link .logo img {
+  width: 100%;
+}
+
+section.background {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 120px 65px 200px 65px;
+  position: relative;
+}
+section.background .write-up {
+  flex: 1;
+}
+section.background .write-up .smiling-sun {
+  display: flex;
+  align-items: center;
+}
+section.background .write-up .smiling-sun h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+section.background .write-up .smiling-sun img {
+  width: 70px;
+  height: 70px;
+  margin-left: 15px;
+}
+section.background .write-up p:nth-child(2) {
+  font-weight: 400;
+  font-size: 3rem;
+  font-family: Creepster;
+  line-height: 1.24;
+}
+section.background .write-up p:nth-child(2) span {
+  color: rgb(121, 60, 15);
+}
+section.background .write-up p:nth-child(3) {
+  font-weight: 400;
+  font-size: 1.3rem;
+  font-family: Poppins;
+}
+section.background .write-up button {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1.2rem;
+  box-shadow: 1px 1px 3px 1px blanchedalmond;
+  border-radius: 4px;
+  font-weight: 600;
+  padding: 10px 20px;
+  transition: 0.4s ease-in;
+  margin-right: 15px;
+}
+section.background .write-up button a {
+  color: white;
+  text-decoration: none;
+}
+section.background .write-up button:hover {
+  background-color: rgb(238, 160, 30);
+  box-shadow: none;
+}
+
+.planet-circle {
+  flex: 1;
+  overflow: hidden;
+}
+.planet-circle .parent-circle {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  animation: circle 20s infinite linear;
+}
+.planet-circle .parent-circle li {
+  width: 60px;
+  height: 60px;
+  list-style-type: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  transform-origin: 175px;
+  transform: rotate(0) translateX(130px);
+  transition: 0.5s ease-in-out;
+  transition-delay: calc(0.1s * var(--i));
+  animation: inner-circle 0.7s infinite ease-in alternate;
+}
+.planet-circle .parent-circle .pluto {
+  background-image: url(../../../public/images/pluto.jpg);
+}
+.planet-circle .parent-circle .uranus {
+  background-image: url(../../../public/images/uranus.jpg);
+}
+.planet-circle .parent-circle .earth {
+  background-image: url(../../../public/images/earth.jpg);
+}
+.planet-circle .parent-circle .mercury {
+  background-image: url(../../../public/images/mercury.jpg);
+}
+.planet-circle .parent-circle .mars {
+  background-image: url(../../../public/images/mars.jpg);
+}
+.planet-circle .parent-circle .venus {
+  background-image: url(../../../public/images/venus.jpg);
+}
+.planet-circle .parent-circle .sartun {
+  background-image: url(../../../public/images/sartun.jpg);
+}
+.planet-circle .parent-circle .neptun {
+  background-image: url(../../../public/images/neptun.jpg);
+}
+.planet-circle .parent-circle .jupiter {
+  background-image: url(../../../public/images/jupiter.jpg);
+}
+.planet-circle .parent-circle .toggle {
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-image: url(../../../public/images/sun.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 5px 13px;
+  color: blanchedalmond;
+  font-weight: 900;
+  transform: translate(-50%, -50%);
+}
+.planet-circle .parent-circle.active li {
+  transform: rotate(calc(40deg * var(--i)));
+}
+
+/* wavy-line styling */
+.custom-shape-divider-bottom-1683646786 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1683646786 svg {
+  position: relative;
+  display: block;
+  width: calc(126% + 1.3px);
+  height: 96px;
+}
+
+.custom-shape-divider-bottom-1683646786 .shape-fill {
+  fill: #FFFFFF;
+}
+
+section.working {
+  margin: 40px auto;
+}
+section.working h2 {
+  text-align: center;
+}
+section.working .container {
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 14px;
+}
+section.working .container .step {
+  margin: 15px 0;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 1px 1px 4px 1px rgb(224, 219, 211);
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+}
+section.working .container .step:hover {
+  transform: scale(1.15, 1.1);
+  z-index: 100;
+  background-color: aliceblue;
+}
+section.working .container .step img {
+  width: 50px;
+  height: 50px;
+}
+section.working .container .step h4 {
+  color: rgb(7, 4, 103);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.preloader {
+  background-color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+.preloader img {
+  width: 140px;
+  height: 140px;
+  animation: logo 0.7s infinite ease-in alternate;
+}
+
+@keyframes logo {
+  from {
+    width: 140px;
+    height: 140px;
+  }
+  to {
+    width: 240px;
+    height: 240px;
+  }
+}
+@keyframes circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes inner-circle {
+  from {
+    width: 60px;
+    height: 60px;
+  }
+  to {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media screen and (max-width: 985px) {
+  section.background {
+    padding: 10px 10px 200px 10px;
+  }
+  .parent-circle {
+    margin: 25px auto;
+  }
+}
+@media screen and (max-width: 985px) {
+  section.background .write-up {
+    text-align: center;
+  }
+  section.background .write-up .smiling-sun {
+    justify-content: center;
+    margin-top: 140px;
+  }
+  section.background .write-up p:nth-child(3) {
+    padding: 25px;
+  }
+  section.background .write-up button {
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .planet-circle {
+    display: none;
+  }
+}/*# sourceMappingURL=home.css.map */

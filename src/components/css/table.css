@@ -1,0 +1,137 @@
+@import url(../../../node_modules/bootstrap/dist/css/bootstrap.min.css);
+#calculator,
+#quotation {
+  overflow-x: scroll;
+}
+
+.load-table {
+  width: 100%;
+  margin: auto;
+  overflow: scroll;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add-product {
+  margin: 10px auto;
+  max-width: 50%;
+  text-align: center;
+}
+.add-product button {
+  width: 100%;
+  border: none;
+  outline: 0;
+  border-radius: 6px;
+  background-color: rgb(7, 5, 105);
+  color: white;
+  padding: 5px 0;
+}
+
+.output {
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-around;
+}
+.output .adjustable-parameters div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  align-items: center;
+  padding: 4px 12px;
+}
+.output .adjustable-parameters div .control-button {
+  border: 1px solid rgba(214, 199, 199, 0.671);
+  border-radius: 20px;
+  background-color: rgb(7, 5, 105);
+}
+.output .adjustable-parameters div .control-button strong {
+  color: white;
+  font-size: 17px;
+}
+.output .adjustable-parameters div .control-button button {
+  font-size: 12px;
+  padding: 5px;
+  padding: 4px 10px;
+  border-radius: 18px;
+}
+.output .adjustable-parameters div button {
+  outline: 0;
+  border: 1px solid rgba(214, 199, 199, 0.671);
+  background-color: white;
+  color: rgb(14, 13, 48);
+}
+.output .adjustable-parameters div .change {
+  padding: 4px 10px;
+  margin-left: 6px;
+  border-radius: 6px;
+  color: white;
+  background-color: rgb(14, 13, 48);
+}
+
+.edit-list td input {
+  width: 140px;
+  border-radius: 4px;
+  outline: 0;
+  border: 1px solid rgb(228, 218, 218);
+  padding: 4px 12px;
+}
+.edit-list td.action {
+  display: flex;
+  gap: 12px;
+}
+.edit-list td.action button {
+  border-radius: 4px;
+  padding: 3px 10px;
+  border: 1px solid rgb(134, 127, 127);
+}
+.edit-list td button.action {
+  width: 150px;
+  border-radius: 4px;
+  border: 1px solid rgb(134, 127, 127);
+}
+
+.pdf-button {
+  text-align: center;
+}
+.pdf-button button {
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  width: 50%;
+  outline: 0;
+  border: none;
+  background-color: rgb(7, 5, 105);
+}
+
+.total-quote {
+  width: 50%;
+  margin: 30px auto;
+  padding: 15px;
+  box-shadow: 1px 1px 4px 1px rgb(171, 200, 207);
+}
+.total-quote .total {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.quote-button input {
+  border-radius: 5px;
+  padding: 2.5px 15px;
+  outline: 0;
+  border: 1px solid rgb(96, 145, 142);
+}
+.quote-button button {
+  margin-left: 12px;
+  padding: 2.5px 15px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: rgb(14, 13, 48);
+}
+
+@media screen and (max-width: 900px) {
+  .total-quote {
+    width: 100%;
+  }
+}/*# sourceMappingURL=table.css.map */

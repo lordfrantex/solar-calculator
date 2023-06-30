@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap');
+
+
+
+.background-cover {
+    background-image: radial-gradient(rgba(11, 15, 36, 0.329), rgba(20, 20, 22, 0.829)), url("../../../public/images/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+
+
+    .setfix {
+        background-color: transparent;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        z-index: 1000;
+        padding: 0;
+
+
+
+        .navBg {
+            background-color: rgb(40, 27, 53);
+
+        }
+
+        nav {
+
+            ul li a {
+                color: white;
+            }
+
+
+            .nav-link {
+
+                display: flex;
+                max-width: 100%;
+                transition: all .5s ease;
+                padding: 10px 15px;
+                justify-content: space-between;
+                align-items: center;
+
+                .mobile-nav {
+                    display: flex !important;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 0;
+                    overflow: hidden;
+                    height: 100vh;
+                    z-index: 100;
+                    right: 0;
+                    top: 90px;
+                    padding: 0;
+                    position: fixed;
+                    transition: all .4s ease-in;
+                    background-color: red;
+
+                    li {
+                        margin: 50px 0;
+                    }
+                }
+
+                .mobile-nav-width {
+                    width: 100%;
+                }
+
+                span {
+                    z-index: 1000;
+                }
+
+                ul {
+                    display: flex;
+                    align-items: center;
+                    list-style-type: none;
+
+
+
+                    li {
+                        padding: 0 15px;
+
+                        a {
+                            color: white;
+                            text-decoration: none;
+                            font-size: 18px;
+                            transition: .4s ease-in-out;
+                            font-weight: bold;
+
+                            &:hover {
+                                color: blue;
+                            }
+                        }
+                    }
+                }
+
+                .logo {
+                    .logo-pics {
+                        background-color: white;
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                    }
+
+                    img {
+
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+section.background {
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 120px 65px 200px 65px;
+    position: relative;
+
+
+    .write-up {
+        flex: 1;
+
+
+        .smiling-sun {
+            display: flex;
+            align-items: center;
+
+            h2 {
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+
+            img {
+                width: 70px;
+                height: 70px;
+                margin-left: 15px;
+
+            }
+
+        }
+
+        p:nth-child(2) {
+            font-weight: 400;
+            font-size: 3rem;
+            font-family: Creepster;
+            line-height: 1.24;
+
+            span {
+                color: rgb(121, 60, 15);
+            }
+        }
+
+        p:nth-child(3) {
+            font-weight: 400;
+            font-size: 1.3rem;
+            font-family: Poppins;
+        }
+
+        button {
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 1.2rem;
+            box-shadow: 1px 1px 3px 1px blanchedalmond;
+            border-radius: 4px;
+            font-weight: 600;
+            padding: 10px 20px;
+            transition: .4s ease-in;
+            margin-right: 15px;
+
+            a {
+                color: white;
+                text-decoration: none;
+
+            }
+
+            &:hover {
+                background-color: rgb(238, 160, 30);
+                box-shadow: none;
+
+            }
+        }
+    }
+}
+
+.planet-circle {
+    flex: 1;
+    overflow: hidden;
+
+    .parent-circle {
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        animation: circle 20s infinite linear;
+
+        li {
+            width: 60px;
+            height: 60px;
+            list-style-type: none;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            transform-origin: 175px;
+            transform: rotate(0) translateX(130px);
+            transition: .5s ease-in-out;
+            transition-delay: calc(0.1s * var(--i));
+            animation: inner-circle .7s infinite ease-in alternate;
+
+        }
+
+
+
+
+        .pluto {
+            background-image: url(../../../public/images/pluto.jpg);
+
+        }
+
+        .uranus {
+            background-image: url(../../../public/images/uranus.jpg);
+
+        }
+
+        .earth {
+            background-image: url(../../../public/images/earth.jpg);
+
+        }
+
+        .mercury {
+            background-image: url(../../../public/images/mercury.jpg);
+
+        }
+
+        .mars {
+            background-image: url(../../../public/images/mars.jpg);
+
+        }
+
+        .venus {
+            background-image: url(../../../public/images/venus.jpg);
+
+        }
+
+        .sartun {
+            background-image: url(../../../public/images/sartun.jpg);
+
+        }
+
+        .neptun {
+            background-image: url(../../../public/images/neptun.jpg);
+
+        }
+
+        .jupiter {
+            background-image: url(../../../public/images/jupiter.jpg);
+
+        }
+
+
+        .toggle {
+            font-size: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            background-image: url(../../../public/images/sun.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-align: center;
+            padding: 5px 13px;
+            color: blanchedalmond;
+            font-weight: 900;
+            transform: translate(-50%, -50%);
+
+
+        }
+
+        &.active li {
+            transform: rotate(calc(360deg/9 *var(--i)));
+
+        }
+
+    }
+}
+
+
+
+
+
+/* wavy-line styling */
+.custom-shape-divider-bottom-1683646786 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1683646786 svg {
+    position: relative;
+    display: block;
+    width: calc(126% + 1.3px);
+    height: 96px;
+}
+
+.custom-shape-divider-bottom-1683646786 .shape-fill {
+    fill: #FFFFFF;
+}
+
+// How it works cointainer
+section.working {
+    margin: 40px auto;
+
+    h2 {
+        text-align: center;
+    }
+
+    .container {
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-around;
+        gap: 14px;
+
+
+
+        .step {
+            margin: 15px 0;
+            padding: 10px;
+            cursor: pointer;
+            text-align: center;
+            box-shadow: 1px 1px 4px 1px rgb(224, 219, 211);
+            transition: .3s ease-in-out;
+            border-radius: 5px;
+
+            &:hover {
+                transform: scale(1.15, 1.1);
+                z-index: 100;
+                background-color: aliceblue;
+            }
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+
+            h4 {
+                color: rgb(7, 4, 103);
+                font-size: 25px;
+                font-weight: bold;
+
+            }
+        }
+    }
+}
+
+.preloader {
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+
+    img {
+        width: 140px;
+        height: 140px;
+        animation: logo .7s infinite ease-in alternate;
+
+    }
+}
+
+// Animation keyframes code
+@keyframes logo {
+    from {
+        width: 140px;
+        height: 140px;
+    }
+
+    to {
+        width: 240px;
+        height: 240px;
+
+    }
+}
+
+@keyframes circle {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+
+    }
+}
+
+@keyframes inner-circle {
+    from {
+        width: 60px;
+        height: 60px;
+    }
+
+    to {
+        width: 70px;
+        height: 70px;
+
+
+    }
+}
+
+@media screen and (max-width: 985px) {
+    section.background {
+        padding: 10px 10px 200px 10px;
+    }
+
+    .parent-circle {
+        margin: 25px auto;
+
+
+    }
+}
+
+@media screen and (max-width: 985px) {
+    section.background {
+
+        .write-up {
+            text-align: center;
+
+            .smiling-sun {
+                justify-content: center;
+                margin-top: 140px;
+
+            }
+
+
+
+            p:nth-child(3) {
+                padding: 25px;
+
+            }
+
+            button {
+                margin: 10px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+
+
+    .planet-circle {
+        display: none;
+    }
+
+
+}
