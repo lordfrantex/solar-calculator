@@ -7,6 +7,8 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { faBarsStaggered, faHamburger } from '@fortawesome/free-solid-svg-icons'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+Aos.init();
+
 const Home = () => {
     /*Refs*/
     const toggle = useRef()
@@ -30,11 +32,10 @@ const Home = () => {
 
     }
     window.addEventListener('scroll', changeNav)
-    window.onload = () => {
-        // preloader.current.style.display = 'none'
-        Aos.init();
+    // window.onload = () => {
+    // preloader.current.style.display = 'none'
 
-    };
+    // };
 
 
 
