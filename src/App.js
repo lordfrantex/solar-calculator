@@ -16,6 +16,7 @@ function App() {
         <Route path="/calculator" element={<Table />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/quotation" element={<Quotation />} />
+        {/* <Route path="/journal" element={<Journal />} /> */}
       </Routes>
       <Home />
       <Table />
