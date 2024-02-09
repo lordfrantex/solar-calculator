@@ -11,7 +11,7 @@ const Home = () => {
     /*Refs*/
     const toggle = useRef()
     const mobileNav = useRef()
-    const preloader = useRef()
+    // const preloader = useRef()
     const fix = useRef()
 
     const handleToggle = () => {
@@ -31,7 +31,7 @@ const Home = () => {
     }
     window.addEventListener('scroll', changeNav)
     window.onload = () => {
-        preloader.current.style.display = 'none'
+        // preloader.current.style.display = 'none'
         Aos.init();
 
     };
@@ -132,9 +132,9 @@ const Home = () => {
 
                 </div>
             </section>
-            <div ref={preloader} className="preloader">
+            {/* <div ref={preloader} className="preloader">
                 <img src="/images/logo.png" alt="" />
-            </div>
+            </div> */}
         </div >
 
     )
